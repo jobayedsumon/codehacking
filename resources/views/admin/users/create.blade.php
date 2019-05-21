@@ -4,6 +4,8 @@
 
     <h1>Create Users</h1>
 
+    <div class="row">
+
 
     {!! Form::open(['method'=>'POST', 'action'=>'AdminUsersController@store', 'files'=>true]) !!}
 
@@ -43,8 +45,13 @@
 
     {!! Form::close() !!}
 
+    </div>
 
-    @include('includes.form_error')
+    <div class="row">
+
+         @include('includes.form_error')
+
+    </div>
 
 
 
